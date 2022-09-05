@@ -23,7 +23,7 @@ body {
     background-color: #1a1b1d;
     display: flex;
     flex-direction: column;
-    
+
 }
 
 
@@ -82,6 +82,19 @@ header {
     align-items: center;
 }
 
+.settings .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .settings {
+        flex-direction: column;
+    }
+}
+
 .settings label {
     margin: 20px;
 }
@@ -99,6 +112,24 @@ header {
     background-color: var(--color-blurple);
     font-weight: 400;
 }
+
+input[type="text"] {
+    margin: 20px;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    width: 120px;
+    height: 32px;
+    border-radius: 5px;
+    background-color: var(--color-white);
+    border: none;
+}
+
+/* input[type="text"]::placeholder {
+    color: var(--color-white);
+    opacity: 1;
+    font-weight: 400;
+} */
 
 input[type="file"] {
     display: none;
@@ -328,7 +359,7 @@ footer {
 }
 
 .items p {
-    color:rgb(143, 143, 143);
+    color: rgb(143, 143, 143);
 }
 
 .about {

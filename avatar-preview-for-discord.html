@@ -19,23 +19,31 @@
 
         <div class="settings">
 
-            <label for="file" class="selectImg">
-                <span>Choose Avatar</span>
-                <input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)">
-            </label>
+            <div class="row">
+                <label for="file" class="selectImg">
+                    <span>Choose Avatar</span>
+                    <input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)">
+                </label>
+    
+                <input type="text" name="username" id="username" onchange="username()" placeholder="Username">
 
-
-            <label class="toggle">
-                <span class="toggle-label">Dark</span>
-                <input class="toggle-checkbox" onchange="toggleMode()" type="checkbox">
-                <div class="toggle-switch"></div>
-                <span class="toggle-label">Light</span>
-            </label>
-
-            <label for="roleColor" class="roleColor">
-                <input type="color" id="roleColor" name="roleColor" value="#ffffff">
-                <span>Role Color</span>
-            </label>
+                
+            </div>
+            
+            <div class="row">
+                <label for="roleColor" class="roleColor">
+                    <input type="color" id="roleColor" name="roleColor" value="#ffffff">
+                    <span>Role Color</span>
+                </label>
+    
+                <label class="toggle">
+                    <span class="toggle-label">Dark</span>
+                    <input class="toggle-checkbox" onchange="toggleMode()" type="checkbox">
+                    <div class="toggle-switch"></div>
+                    <span class="toggle-label">Light</span>
+                </label>
+            </div>
+            
 
         </div>
 
@@ -63,8 +71,8 @@
                 <div class="messages">
                     <div class="avatar"><img id="output" src="https://cdn.discordapp.com/embed/avatars/0.png" /></div>
                     <div class="content">
-                        <h2 id="roleColorText" class="roleColorText">
-                            <username contenteditable>Your Username</username><span>Today at 4:44</span>
+                        <h2 class="roleColorText">
+                            <username id="roleColorText" contenteditable>Your Username</username><span>Today at 4:44</span>
                         </h2>
                         <div class="message">
                             <p class="messageText" contenteditable>Right? You can even edit your message.</p>

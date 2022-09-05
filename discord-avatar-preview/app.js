@@ -36,3 +36,10 @@ let loadFile = function(event) {
     document.getElementById('output3').src = URL.createObjectURL(event.target.files[0]);
     // document.getElementById('output4').src = URL.createObjectURL(event.target.files[0]);
 };
+
+// Sync Username
+
+function username() {
+    document.getElementById('roleColorText').innerHTML = document.getElementById('username').value;
+    document.getElementById('roleColorText3').innerHTML = document.getElementById('username').value;
+}
