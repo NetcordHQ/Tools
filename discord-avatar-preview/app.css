@@ -340,6 +340,20 @@ footer {
     padding: 20px;
 }
 
+footer a:link, footer a:visited {
+    color: var(--color-red);
+    font-weight: 600;
+    text-underline-offset: 7px;
+}
+
+footer a:hover {
+    text-decoration: none;
+}
+
+footer .support {
+    padding: 20px;
+}
+
 .footer-container {
     display: flex;
     justify-content: center;
