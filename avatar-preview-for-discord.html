@@ -5,13 +5,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="discord-avatar-preview/app.js"></script>
     <link rel="stylesheet" href="discord-avatar-preview/app.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="style.css">
     
     <title>Avatar Preview</title>
 </head>
 
 <body>
     <header>
+        <nav>
+            <div class="nav-container">
+    
+                <ul class="menu-bar">
+                    <img class="logo" src="/assets/netcord_logo.png" alt="Netcord">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Articles</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </nav>
+
         <div class="title">
             <h1>Discord Avatar Preview</h1>
             <p>Preview exactly how your avatar/PFP will look on Discord</p>
@@ -70,7 +86,7 @@
                     <div class="avatar"><img id="output" src="https://cdn.discordapp.com/embed/avatars/0.png" /></div>
                     <div class="content">
                         <h2 class="roleColorText">
-                            <username id="roleColorText" contenteditable>Your Username</username><span>Today at 4:44</span>
+                            <username id="roleColorText">Your Username</username><span>Today at 4:44</span>
                         </h2>
                         <div class="message">
                             <p class="messageText" contenteditable>Right? You can even edit your message.</p>
@@ -108,7 +124,7 @@
                 <div class="user">
                     <div class="avatar"><img id="output3" src="https://cdn.discordapp.com/embed/avatars/0.png" /></div>
                     <div class="content">
-                        <h2 id="roleColorText3" class="roleColorText" contenteditable>Your Username</h2>
+                        <h2 id="roleColorText3" class="roleColorText">Your Username</h2>
                         <div class="status">
                             <p class="statusText" contenteditable>Click to edit</p>
                         </div>
@@ -130,30 +146,6 @@
         </div>
 
     </main>
-
-    <footer>
-        <div class="footer-container">
-            <div class="about items">
-                <h3>About</h3>
-                <p>Discord Avatar Preview is an OpenSource tool developed by <a href="http://roonie.in/" target="_blank">Roonie</a> for <a href="/" target="_blank" rel="noopener noreferrer">Netcord Tools</a>.</p> 
-                <div class="support">
-                    <a href='https://ko-fi.com/Y8Y7EO9JS' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi3.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
-                </div>
-            </div>
-            <div class="other-tools items">
-                <h3>Other Tools</h3>
-                <p>Coming Soon!</p>
-            </div>
-            <div class="quick-links items">
-                <h3>Quick Links</h3>
-                <a href="https://tools.netcord.site/">Tools Home</a><br>
-            </div>
-        </div>
-    </footer>
-
-    
-
-    <script src="discord-avatar-preview/app.js"></script>
 </body>
 
 </html>

@@ -1,12 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Netcord Tools</title>
+
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Header */
+        .title {text-align: center;padding: 20px;}
+        .title h1 {font-size: 90px;font-weight: 700;padding: 20px;}
+        a {text-decoration: none;color: white;}
+        /* Tools */
+        .tools-container{display: flex;flex-direction: column;justify-content: center;align-items: center;}
+        .row {display: flex;flex-direction: row;justify-content: center;align-items: center;}
+        .tool {background-color: var(--color-white); padding:20px; margin: 20px; border-radius: 20px;}
+    </style>
 </head>
+
 <body>
-    <h1>Coming Soon!</h1>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <ul class="menu-bar">
+                    <img class="logo" src="/assets/netcord_logo.png" alt="Netcord">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li><a href="https://netcord.site/" target="_blank">Articles</a></li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="title">
+            <h1>Netcord Tools</h1>
+            <p>Useful Discord tools for power users. Upgrade your Discord experience with our tools. All open-source, all free.</p>
+        </div>
+    </header>
+
+    <main class="tools-container">
+        <div class="row">  
+            <div class="tool">
+                <h2>Avatar Preview</h2>
+                <p>Preview exactly how your <br/>avatar/PFP will look on Discord</p>
+            </div>
+        </div>
+    </main>
 </body>
+
 </html>
